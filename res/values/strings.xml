@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Reclame Alto</string>
+    <string name="action_settings">Configurações</string>
+    
+    <string name="atualizar_button">Atualizar</string>
+    <string name="reclamar_button">Reclamar</string>
+    <string name="todas_reclamacoes_button">Todas</string>
+    <string name="minhas_reclamacoes_button">Minhas</string>
+    <string name="titulo_activity_complain">Nova Reclamação</string>
+    <string name="selecionar_imagem_button">Selecionar Imagem</string>
+    <string name="selecionar_local_button">Selecionar Local</string>
+    <string name="enviar_reclamacao_button">Enviar Reclamação</string>
+    <string name="imagem_image_view">Imagem selecionada</string>
+    <string name="reclamacao_text_view">Reclamação</string>
+    
+    <string name="titulo_dialogo_alerta_gps">Configurar GPS</string>
+    <string name="mensagem_dialogo_alerta_gps">GPS não está habilitado. Você quer ir ao menu de configuração?</string>
+    
+    <string name="settings">Settings</string>
+    <string name="cancel">Cancel</string>
+
+</resources>

@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="main.java.com.zetauma.complainloudly.ComplainActivity" >
+
+    <Button
+        android:id="@+id/buttonSelecionarImagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@android:drawable/ic_menu_camera"
+        android:text="@string/selecionar_imagem_button" />
+
+    <Button
+        android:id="@+id/buttonSelecionarLocal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonSelecionarImagem"
+        android:layout_centerHorizontal="true"
+        android:drawableRight="@android:drawable/ic_menu_mylocation"
+        android:text="@string/selecionar_local_button" />
+
+    <ImageView
+        android:id="@+id/imageViewImagem"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/buttonSelecionarLocal"
+        android:layout_below="@+id/buttonSelecionarLocal"
+        android:contentDescription="@string/imagem_image_view" />
+
+    <TextView
+        android:id="@+id/textViewLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageViewImagem"
+        android:layout_alignRight="@+id/buttonSelecionarLocal"
+        android:layout_toRightOf="@+id/imageViewImagem"
+        android:padding="8dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewReclamacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonSelecionarLocal"
+        android:layout_below="@+id/imageViewImagem"
+        android:text="@string/reclamacao_text_view"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextReclamacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonEnviarReclamacao"
+        android:layout_alignLeft="@+id/textViewReclamacao"
+        android:layout_alignRight="@+id/textViewLocal"
+        android:layout_below="@+id/textViewReclamacao"
+        android:ems="20"
+        android:gravity="top"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonEnviarReclamacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/enviar_reclamacao_button" />
+
+</RelativeLayout>
